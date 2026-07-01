@@ -23,7 +23,7 @@ func CreateInterface() (*water.Interface, error) {
 	// Target the official TAP-Windows driver
 	config.PlatformSpecificParams = water.PlatformSpecificParams{
 		ComponentID:   "tap0901",
-		InterfaceName: "TubeTUN",
+		InterfaceName: "",
 	}
 
 	// 1. Try to create the interface first
