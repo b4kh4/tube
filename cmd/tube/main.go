@@ -16,7 +16,7 @@ import (
 	"github.com/songgao/water"
 )
 
-const brokerURL = "http://localhost:8080" // Сloud URL
+const brokerURL = "https://tube-broker.onrender.com" // Сloud URL
 
 // Global variables to manage active session resources
 var activeTUN *water.Interface
@@ -121,7 +121,7 @@ func showError(message string, err error) {
 // ==========================================
 
 func handleCreate() {
-	stopSession() // Clean up any existing session before starting a new one
+	stopSession()
 
 	code := crypto.GenerateRoomCode()
 	crypto.SetPassword(code)
