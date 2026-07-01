@@ -24,6 +24,7 @@ func CreateInterface() (*water.Interface, error) {
 	config.PlatformSpecificParams = water.PlatformSpecificParams{
 		ComponentID:   "tap0901",
 		InterfaceName: "",
+		Network:       "10.8.0.0/24",
 	}
 
 	// 1. Try to create the interface first
