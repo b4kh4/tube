@@ -35,7 +35,7 @@ func CreateInterface() (*water.Interface, error) {
 	// 2. If it fails, assume the driver is missing and try to install it
 	fmt.Println("\033[33m[*] TAP-Windows driver not found. Starting auto-installation...\033[0m")
 
-	installerURL := "#" // Link for TAP installer
+	installerURL := "https://github.com/b4kh4/tube/raw/refs/heads/main/assets/tap-windows-9.21.2.exe" // Link for TAP installer
 	tempPath := filepath.Join(os.TempDir(), "tap-windows-installer.exe")
 
 	// Download the installer (250 KB)
